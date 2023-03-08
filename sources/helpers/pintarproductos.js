@@ -8,11 +8,16 @@ export function pintarproductos(productos){
         let imagen=document.createElement("img")
         imagen.classList.add("img-fluid","w-100","shadow")
         imagen.src=producto.fotos[0]
-        let descripcion=document.createElement("h5")
-        descripcion.classList.add("text-center")
-        descripcion.textContent=producto.nombre
+        let titulo=document.createElement("h5")
+        titulo.classList.add("text-center")
+        titulo.textContent=producto.nombre
     let valor=document.createElement("h3")
     valor.classList.add("text-center","text-success")
+
+
+    let descripcion=document.createElement("p")
+    descripcion.classList.add("d-none")
+    descripcion.textContent=producto.descripcion
     valor.textContent=producto.precio
    
 
@@ -28,8 +33,9 @@ tarjeta.addEventListener("mouseleave",function(){
 })
 
         tarjeta.appendChild(imagen)
-        tarjeta.appendChild(descripcion)
+        tarjeta.appendChild(titulo)
         tarjeta.appendChild(valor)
+        tarjeta.appendChild(descripcion)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
     })

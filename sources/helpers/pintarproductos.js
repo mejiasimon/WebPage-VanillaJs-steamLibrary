@@ -23,6 +23,11 @@ export function pintarproductos(productos){
 
     tarjeta.addEventListener("click",function(){
         imagen.src=producto.fotos[0]
+        function saludar(nombre){
+            console.log("hola"+nombre)
+        }
+        let nombre2="juan"
+        saludar("catalina")
     })
 tarjeta.addEventListener("mouseover",function(){
 imagen.src=producto.fotos[1]

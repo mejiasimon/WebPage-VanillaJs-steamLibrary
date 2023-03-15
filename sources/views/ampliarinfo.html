@@ -12,7 +12,15 @@
 </head>
 <body>
     <header>
-        <nav></nav>
+       
+<a href="carrito.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="" class="bi bi-cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg>
+      <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger" id="pildora">
+        0
+      </span>
+</a>
     </header>
     <main>
         <div class="container-fluid my-5">
@@ -27,15 +35,22 @@
                     <div class="col-4" ><img src="/assets/img/pp.png.png" alt="" class="img-fluid h-50"></div>
                 </div>
                 <p class="col-6" id="descripcion"></p>
-                <i class="bi bi-truck"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                    <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg>
                 <p>Envio en 24 Horas</p>
-                <i class="bi bi-arrow-counterclockwise"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+                    <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+                  </svg>
                 <p>Devolucion solo en los 5 primeros dias</p>
                 <h4>cantidad:</h4>
                 <input class="form-control" type="number" name="number" id="number" placeholder="1">
                 <br><br>
                 <h4>Subtotal:</h4>
-
+                <br>
+<input class="btn btn-dark" type="submit" value="poner en el carrito" id="agregar">
+<button class="btn btn-light">pasar a dolares</button>
 
                 </div>
             </div>

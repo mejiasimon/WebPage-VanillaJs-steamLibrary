@@ -4,7 +4,7 @@ export function pintarproductos(productos){
         let columna=document.createElement("div")
         columna.classList.add("col")
         let tarjeta=document.createElement("div")
-        tarjeta.classList.add("card","h-100")
+        tarjeta.classList.add("card","h-100",)
         let imagen=document.createElement("img")
         imagen.classList.add("img-fluid","w-100","shadow")
         imagen.src=producto.fotos[0]
@@ -23,11 +23,6 @@ export function pintarproductos(productos){
 
     tarjeta.addEventListener("click",function(){
         imagen.src=producto.fotos[0]
-        function saludar(nombre){
-            console.log("hola"+nombre)
-        }
-        let nombre2="juan"
-        saludar("catalina")
     })
 tarjeta.addEventListener("mouseover",function(){
 imagen.src=producto.fotos[1]

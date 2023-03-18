@@ -4,7 +4,6 @@ let fila=document.getElementById("fila")
 pintarproductos(productos)
 //pintar productos
 
-    
 //escuchando click en la fila contenedora de productos
 fila.addEventListener("click",function(evento){
 let datos_Seleccionado={}

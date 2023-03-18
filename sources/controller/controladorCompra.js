@@ -24,11 +24,13 @@ else{
 }
 
 
-console.log(carrito)
 let button_agregar=document.getElementById("agregar")
 button_agregar.addEventListener("click",function(){
-    console.log(carrito)
+    let cantidad=document.getElementById("number")
     carrito.push(infoProducto)
-    pildora_numero.textContent=carrito.length
+    let suma= parseInt(cantidad.value)
+    let valor= parseInt(carrito.length)
+    let total=suma+valor
+    pildora_numero.textContent=total
     localStorage.setItem("carrito",JSON.stringify(carrito))
 })

@@ -30,7 +30,13 @@ button_agregar.addEventListener("click",function(){
     carrito.push(infoProducto)
     let suma= parseInt(cantidad.value)
     let valor= parseInt(carrito.length)
-    let total=suma+valor
+    let total=suma+valor-1
     pildora_numero.textContent=total
     localStorage.setItem("carrito",JSON.stringify(carrito))
 })
+
+let limpiar=document.getElementById("limpiar")
+limpiar.addEventListener("click",function(){
+localStorage.removeItem("carrito",carrito)
+})
+
